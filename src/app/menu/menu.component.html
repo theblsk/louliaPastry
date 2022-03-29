@@ -1,0 +1,78 @@
+
+<div class="content">
+    <div class="menuHeadline">
+        <h1>Scroll through our tasty and amazing menu section</h1>
+    </div>
+    <div class="selection">
+        <button class="menuButton" (click)="chooseOne('eclaire')">Eclaire</button>
+        <button class="menuButton" (click)="chooseOne('cookie')">Cookies</button>
+        <button class="menuButton" (click)="chooseOne('icecream')">Ice Cream</button>
+        <button class="menuButton" (click)="chooseOne('brownie')">Brownie</button>
+        <button class="menuButton" (click)="chooseOne('specialBites')">Special Bites</button>
+    </div>
+
+    <div class="menuContent" id="menuContent">
+         <div *ngFor = 'let item of this.menu.eclaire' class="menuItem" data-target="eclaire">
+             <div class="itemName">
+                <h4>{{item.name}}</h4>
+                <hr>  
+             </div>
+             <div class="itemPicture">
+                <img src={{item.picturePath}} alt="item"> 
+             </div>
+             <div class="itemDescription">
+                <p>{{item.description}}</p>
+             </div>
+        </div>
+         <div *ngFor = 'let item of this.menu.cookie' class="menuItem" data-target="cookie">
+            <div class="itemName">
+                <h4>{{item.name}}</h4> 
+                <hr>   
+             </div>
+             <div class="itemPicture">
+                <img src={{item.picturePath}} alt="item"> 
+             </div>
+             <div class="itemDescription">
+                <p>{{item.description}}</p>
+             </div>
+        </div> 
+        <div *ngFor = 'let item of this.menu.icecream' class="menuItem" data-target="icecream">
+            <div class="itemName">
+                <h4>{{item.name}}</h4> 
+                <hr>   
+             </div>
+             <div class="itemPicture">
+                <img src={{item.picturePath}} alt="item"> 
+             </div>
+             <div class="itemDescription">
+                <p>{{item.description}}</p>
+             </div>
+        </div> 
+        <div *ngFor = 'let item of this.menu.brownie' class="menuItem" data-target="brownie">
+         <div class="itemName">
+             <h4>{{item.name}}</h4> 
+             <hr>   
+          </div>
+          <div class="itemPicture">
+             <img src={{item.picturePath}} alt="item"> 
+          </div>
+          <div class="itemDescription">
+             <p>{{item.description}}</p>
+          </div>
+         </div> 
+         <div *ngFor = 'let item of this.menu.specialBites' class="menuItem" data-target="specialBites">
+            <div class="itemName">
+                <h4>{{item.name}}</h4> 
+                <hr>   
+             </div>
+             <div class="itemPicture">
+                <img src={{item.picturePath}} alt="item"> 
+             </div>
+             <div class="itemDescription">
+                <p>{{item.description}}</p>
+             </div>
+         </div> 
+
+      
+    </div>
+</div>

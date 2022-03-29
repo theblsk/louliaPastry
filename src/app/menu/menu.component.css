@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+.content{
+    margin-top: 60px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 100%;
+    gap: 25px;
+}
+@media only screen and (max-width: 350px){
+    .content{
+        grid-template-rows: 100px 100px 100%;
+    }
+}
+.menuHeadline{
+    grid-area: a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuHeadline h1{
+    text-align: center;
+    width: 75%;
+    color: var(--misc2);
+}
+.selection{
+    grid-area: b;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.menuButton{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 85px;
+    font-size: 100%;
+    background-color: var(--navbar);
+    color: var(--misc2);
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.menuContent{
+    grid-area: c;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menuItem{
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    height: 400px;
+    background-color: var(--main-bg);
+    box-shadow: var(--misc1) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 
+    "pic"
+    "name"
+    "desc";
+    grid-template-rows: 4fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 15px;
+    opacity: 1;
+    animation: appear 500ms ease-in-out forwards;
+}
+.menuItemHidden{
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    height: 400px;
+    background-color: var(--main-bg);
+    box-shadow: var(--misc1) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 10px;
+    display: none;
+    grid-template-areas: 
+    "pic"
+    "name"
+    "desc";
+    grid-template-rows: 4fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 15px;
+    opacity: 0;
+    animation: disappear 500ms ease-in-out forwards;
+}
+@media only screen and (max-width: 350px)
+{
+    .menuItem{
+        width: 200px;
+        height: 300px;
+    }
+    .menuItemHidden{
+        width: 200px;
+        height: 300px;
+    }
+}
+.itemPicture{
+    grid-area: pic;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.itemPicture img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+.itemName{
+    grid-area: name;
+    width: 100%;
+    display: flex;
+    justify-items: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.itemName h4{
+    padding-left: 10px;
+}
+.itemName hr{
+    width: 100%;
+    margin: 0;
+    background-color: var(--navbar);
+}
+.itemDescription{
+    grid-area: desc;
+    font-family: 'Asap', cursive!important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.itemDescription p{
+    font-size: 75%;
+}
+.spaceFiller{
+    opacity: 0;
+}
