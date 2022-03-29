@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{88FFACEB-0642-4742-9604-1BA0D01A56B6}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="theAPI/BLC/BLC.cs">
+    <Files>
+      <File FileName="theAPI/Controllers/MenuController.cs" Line="33" Column="10" />
+      <File FileName="theAPI/Models/MenuItem.cs" Line="19" Column="1" />
+      <File FileName="theAPI/Program.cs" Line="19" Column="59" />
+      <File FileName="theAPI/Properties/launchSettings.json" Line="17" Column="26" />
+      <File FileName="theAPI/appsettings.json" Line="9" Column="25" />
+      <File FileName="theAPI/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="theAPI/DALC/DALC.cs" Line="31" Column="24" />
+      <File FileName="theAPI/BLC/BLC.cs" Line="29" Column="39" />
+      <File FileName="theAPI/Dockerfile" Line="1" Column="1" />
+      <File FileName="theAPI/.dockerignore" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LouliaGenericPastryShop" expanded="True">
+            <Node name="theAPI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="BLC" expanded="True" />
+              <Node name="Controllers" expanded="True" selected="True" />
+              <Node name="DALC" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.theAPI PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
